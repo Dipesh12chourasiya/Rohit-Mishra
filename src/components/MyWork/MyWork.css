@@ -1,0 +1,169 @@
+.mywork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 150px;
+}
+
+.mywork-title{
+    position: relative;
+}
+
+.mywork-title h1{
+    padding: 0px 30px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.mywork-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.mywork-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.mywork-container div img{
+    box-sizing: border-box;
+    width: 419px;
+    height: 290px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.mywork-container div img:hover{
+    transform: scale(1.05);
+    /* border: 4px solid #ff00ff; */
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.img-btn-con h3{
+    text-align: start;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.img-btn-con a{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.mywork-showmore{
+    display: flex;
+    gap: 15px;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 23px 44px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+.mywork-showmore:hover{
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 100%);
+    transition: 0.3s;
+}
+.mywork-showmore a{
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    gap: 13px;
+}
+.mywork-showmore a:hover{
+    gap:30px;
+    transition: 0.3s;
+}
+
+/* CSS for button */
+.button-72 {
+  align-items: center;
+  background-color: initial;
+  background-image: linear-gradient(rgba(179, 132, 201, .84), rgba(57, 31, 91, .84) 50%);
+  border-radius: 42px;
+  border-width: 0;
+  box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px,rgba(179, 132, 201, 0.4) 0 8px 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  font-family: Quicksand,sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: .04em;
+  line-height: 16px;
+  margin: 0;
+  padding: 18px 18px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,rgba(255, 255, 255, 0.2) 0 0 12px,rgba(57, 31, 91, 0.6) 1px 1px 4px,rgba(57, 31, 91, 0.32) 4px 4px 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+}
+
+.button-72:hover {
+  background-image: linear-gradient(#B384C9, #431f72 50%);
+}
+.button-72:active{
+    transform: scale(0.9);
+    transition: 0.1s;
+}
+
+
+@media(max-width:600px) {
+
+    .mywork{
+        gap: 80px;
+        margin: 41px 35px;
+        align-items: center;
+    }
+    .mywork-title h1{
+        font-size: 30px;
+        padding: 0;
+    }
+    .mywork-title img{
+        width: 100px;
+        right: -20px;
+    }
+
+    .mywork-container{
+        margin-top: -32px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        max-width: 80vw;
+    }
+    .mywork-container div img{
+        box-sizing: border-box;
+        width: 300px;
+        height: 200px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .mywork-showmore{
+        display: flex;
+        gap: 12px;
+        border-radius: 50px;
+        border: 2px solid white;
+        padding: 17px 24px;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 81px;
+        cursor: pointer;
+        margin-top: -28px;
+    }
+
+
+
+    .button-72 {
+        font-size: 21px;
+        padding: 18px 34px;
+      }
+}

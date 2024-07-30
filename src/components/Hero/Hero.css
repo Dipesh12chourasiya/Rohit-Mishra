@@ -1,0 +1,119 @@
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.hero img{
+    margin-top: 35px;
+    transition: 0.3s;
+}
+.hero img:hover{
+    transform: scale(1.04);
+    transition: 0.3s;
+}
+
+.hero h1{
+    text-align: center;
+    width: 70%;
+    font-size: 70px;
+    font-weight: 600;
+}
+.pc{
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p{
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.hero-action a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #d04cf5;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #d04cf5;
+    text-decoration: none;
+    transition: .5s ease;
+    margin: 30px 15px 30px 0;
+}
+.hero-action a:hover{
+    background: #d867f7;
+    color: #081b29;
+    box-shadow: 0 0 20px #db87f3;
+}
+.hero-connect .res{
+    padding: 4px 51px;
+    border-radius: 50px;
+    border: 2px solid #FFF;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+}
+
+.hero-connect .res:hover{
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 100%);
+    transform: scale(1.04);
+    color: white;
+}
+
+
+
+/* responsivness */
+/* 768px */
+@media(max-width:600px) {
+    .hero{
+        margin-bottom: 80px;
+    }
+    .hero img{
+        width: 120px;
+        margin-top: 3px;
+    }
+    .hero h1{
+        width: 80%;
+        font-size: 30px;
+    }
+    .hero p{
+        width: 70%;
+        font-size: 13px;
+        line-height: 25px;
+        margin-bottom: -25px;
+    }
+    .hero-action{
+        gap: 0px;
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+    .hero-connect .res{
+        padding: 3px 48px;
+        border-radius: 50px;
+        border: 2px solid #FFF;
+        cursor: pointer;
+        transition: 0.3s;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+}
