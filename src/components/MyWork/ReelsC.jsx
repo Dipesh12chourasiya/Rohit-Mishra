@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./MyWork.css";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import vid1 from "../../assets/Projects/Liugong Graphics/Liugong reel.mp4";
 import vid2 from "../../assets/Projects/Clothing Industry Post & Reels/2.mp4";
@@ -11,15 +11,15 @@ import vid4 from "../../assets/Projects/Clothing Industry Post & Reels/4.mp4";
 const ReelsC = () => {
 
   // slide to top function
-  useEffect(() => {
-    const goToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
-    };
-    goToTop();
-}, []);
+    useEffect(() => {
+      const goToTop = () => {
+          window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+          });
+      };
+      goToTop();
+  }, []);
 
   return (
     <div className="mywork" id="work">
