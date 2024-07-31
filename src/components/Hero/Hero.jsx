@@ -1,6 +1,8 @@
 import React from "react";
 import "./Hero.css";
 import profile from "../../assets/pro.jpg";
+import MyWork from "../MyWork/MyWork";
+import Footer from "../Footer/Footer";
 
 const Hero = () => {
   // strings: [
@@ -12,7 +14,8 @@ const Hero = () => {
   //   ],
 
   return (
-    <div className="hero" id="hero" style={{marginTop:'90px'}}>
+    <section>
+      <div className="hero" id="hero" style={{marginTop:'90px'}}>
       <img
         src={profile}
         width={"200px"}
@@ -31,7 +34,11 @@ const Hero = () => {
         <a target="_blank" href="https://www.linkedin.com/in/rohit-mishra-5184341a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i className='bx bxl-linkedin'></i></a>
         <a target="_blank" href="https://wa.me/9131959986"><i className='bx bxl-whatsapp'></i></a>
       </div>
+
     </div>
+      {/* My Work Component */}
+      <MyWork />
+    </section>
   );
 };
 

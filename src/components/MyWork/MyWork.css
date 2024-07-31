@@ -12,10 +12,11 @@
 }
 
 .mywork-title h1{
-    padding: 0px 30px;
-    font-size: 60px;
+    padding: 0px 114px;
+    font-size: 65px;
     font-weight: 600;
 }
+
 
 .mywork-title img{
     position: absolute;
@@ -116,6 +117,17 @@
     transition: 0.1s;
 }
 
+.mywork-LinkTag{
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+    transition-duration: 0.4s;
+}
+.mywork-LinkTag:hover{
+    color: #B923E1;
+    border-bottom: 1px solid #B923E1;
+    transform: scale(1.08);
+}
 
 @media(max-width:600px) {
 
